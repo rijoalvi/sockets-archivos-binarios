@@ -1,0 +1,14 @@
+
+**** Build of configuration Debug for project FileMaker ****
+
+make all 
+Building file: ../src/FileMaker.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/FileMaker.d" -MT"src/FileMaker.d" -o"src/FileMaker.o" "../src/FileMaker.cpp"
+Finished building: ../src/FileMaker.cpp
+ 
+Building target: FileMaker
+Invoking: GCC C++ Linker
+g++  -o"FileMaker"  ./src/FileMaker.o   
+Finished building target: FileMaker
+ 

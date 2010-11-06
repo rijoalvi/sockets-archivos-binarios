@@ -1,0 +1,21 @@
+//============================================================================
+// Name        : FileMaker.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main() {
+	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	ofstream myfile;
+	myfile.open("10MB.txt");
+	for(int i=0; i<1000; i++){
+		myfile<<"*";
+	}
+	myfile.close();
+}
