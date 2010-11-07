@@ -2208,3 +2208,178 @@ Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.pa
 
 !ENTRY org.eclipse.core.resources 2 10035 2010-11-03 18:03:41.598
 !MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2010-11-06 21:21:01.075 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_20
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.cpp.product
+Command-line arguments:  -os linux -ws gtk -arch x86 -product org.eclipse.epp.package.cpp.product
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:49:35.251
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:52:45.758
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:53:02.288
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:54:58.668
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:57:16.775
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 21:57:37.809
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:02:20.709
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:03:25.045
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:09:24.050
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:11:46.497
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:17:07.030
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
+
+!ENTRY org.eclipse.debug.core 4 125 2010-11-06 22:28:43.254
+!MESSAGE Error logged from Debug Core: 
+!STACK 0
+java.io.IOException: read error
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read0(Native Method)
+	at org.eclipse.cdt.utils.spawner.SpawnerInputStream.read(SpawnerInputStream.java:66)
+	at java.io.BufferedInputStream.read1(BufferedInputStream.java:273)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:334)
+	at java.io.FilterInputStream.read(FilterInputStream.java:107)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.read(OutputStreamMonitor.java:144)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor.access$1(OutputStreamMonitor.java:134)
+	at org.eclipse.debug.internal.core.OutputStreamMonitor$1.run(OutputStreamMonitor.java:207)
+	at java.lang.Thread.run(Thread.java:636)
