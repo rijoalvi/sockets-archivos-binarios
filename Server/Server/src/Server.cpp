@@ -25,7 +25,7 @@ Server::Server() {
 	  int sockfd, newsockfd, portno, clilen;  //sockfd y portno son descriptores de archivo. estas variables
 	                                             //guardan los valores retornados por la llamada al sistema del socket y
 	                                             //la llamada al sistema de aceptacion.
-	   char buffer[256];                       //buffer para almacenar el mensaje
+	                      //buffer para almacenar el mensaje
 	   struct sockaddr_in serv_addr, cli_addr; //sockaddr_in es una estructura que guarda una direccion de internet
 	   int n;                                  // n guarda el valor de retorno de read() y write()
 
@@ -51,24 +51,29 @@ Server::Server() {
 		   if (newsockfd < 0)                      //error si no se completa
 			   printf("ERROR on accept");
 
-	      bzero(buffer,256);
 
-	//      n = read(newsockfd,buffer,255);         //lee el el socket y lo copia al buffer
-	      n = recv(newsockfd,buffer,10,0);         //lee el el socket y lo copia al buffer
+	      //int size=10;// 10 Bytes
+	      int size=1024;// 1 KByte
+	       //int size=1048576;// 1 MByte
+	       //int size=10485760;// 10 MByte
+		   char buffer[size];
+	      bzero(buffer,size);
+	      n = recv(newsockfd,buffer,size,0);
 	       ArchivoBinario* archi= new ArchivoBinario();
-	       archi->crearArchivoAPartirDeBuffer("file",buffer,10);
+	       archi->crearArchivoAPartirDeBuffer("fileCopiado.txt",buffer,size);
 	      //******************
 
 	  	TablaEnrutamiento* tabla=new TablaEnrutamiento();
-	      if (n < 0) printf("ERROR reading from socket server");//error por si no pudo leerlo
+	      if (n < 0) printf("ERROR reading from socket server\n");//error por si no pudo leerlo
 
 	  	char * ip=tabla->getIPAccordingToSize("tabla_enrutamiento",buffer);
 
 	      //******************
 
 
-	      printf("Cliente quiere enrutar paquete de tamaño: %s",buffer);//imprime el mensaje
-	      n = send(newsockfd,ip,18,0);//devuelve que recibio el mensaje
+	      printf("Cliente tranfirió archivo de tamaño: %d\n",size);//imprime el mensaje
+	      //n = send(newsockfd,ip,18,0);//devuelve que recibio el mensaje
+	      n = send(newsockfd,"exito",5,0);//devuelve que recibio el mensaje
 	      if (n < 0){
 	    	  printf("Error\n");
 	      }

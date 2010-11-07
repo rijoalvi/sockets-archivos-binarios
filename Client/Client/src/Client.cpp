@@ -50,38 +50,48 @@ Client::Client(int argc, char *argv[]) {
     	printf("ERROR connecting client");//se intenta conectar con el servidor, sino puede tira un error y se sale
     //while(1){
 
-        printf("Que tamaño de paquete desea enviar? ");//si se conecta pide el mensaje
-        char buffer[256];//buffer donde guarda los caracteres que le entran desde el socket
-        bzero(buffer, 256);//inicializa el buffer a cero
-       fgets(buffer, 255, stdin);//lee de la entrada estandar
-       //n = write(sockfd, buffer, strlen(buffer));//escribe en el socket lo que hay en el buffer, y guarda el retorno de la funcion para escribir en el socket en n
+    	//printf("Que tamaño de paquete desea enviar? ");//si se conecta pide el mensaje
+
        char * fileSize="102400";
 
 
 
 
-       char * nombreArchivo="example.txt";
+       char * nombreArchivo = "1K_Byte.txt";
 
        ArchivoBinario* archi= new ArchivoBinario();
-       int size=10;
-       //char * miBuffer=new char[size];
+       //int size=10;
+       int size=1024;// 1 KByte
+       //int size=1048576;// 1 MByte
+       //int size=10485760;// 10 MByte
 
-       clock_t t1,t2;
-       t1=clock();
+
+
+
+
        char * miBuffer=archi->getBuffer(nombreArchivo);
+
+       timeval t1, t2;
+       long double elapsedTime;
+       gettimeofday(&t1,NULL);
+       elapsedTime=strlen(miBuffer);
+       printf("[tamaño: [%d] .", strlen(miBuffer));
        n = send(sockfd, miBuffer, strlen(miBuffer),0);//escribe en el socket lo que hay en el buffer, y guarda el retorno de la funcion para escribir en el socket en n
        if (n < 0) //si n < 0 hubo error y sale
-        	printf("ERROR writing to socket");
-
-        bzero(buffer, 256);
-        n = recv(sockfd, buffer, 15,0);         //lee el el socket y lo copia al buffer
+        	printf("ERROR writing to socket cliente\n");
+       char buffer[5];//buffer donde guarda los caracteres que le entran desde el socket
+        bzero(buffer, 5);
+        n = recv(sockfd, buffer, 5,0);         //lee el el socket y lo copia al buffer
         if (n < 0){
-        	printf("ERROR reading from socket");//error por si no pudo leerlo
+        	printf("ERROR reading from socket server\n");//error por si no pudo leerlo
 	}
-        printf("\nServidor me respondió con dirección IP: %s\n", buffer);//imprime el mensaje*/
-  //	  }
-        t2=clock();
-        printf("[%f]\n", (double)t2-(double)t1);
+        printf("\nServidor me respondió: %s\n", buffer);//imprime el mensaje*/
+    	gettimeofday(&t2,NULL);
+
+    	elapsedTime = ((t2.tv_sec-t1.tv_sec)*1000.0)+((t2.tv_usec-t1.tv_usec)/1000.0);
+
+    	printf("[%Lf] ms.", elapsedTime);
+
 
 }
 

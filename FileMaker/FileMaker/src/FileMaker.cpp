@@ -11,10 +11,9 @@
 #include <sys/time.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
-#include <time.h>
-#include <ctime>
-#include <sys/time.h>
+
+//#include <time.h>
+
 
 using namespace std;
 
@@ -37,9 +36,10 @@ int main() {
 //******************************************************************************************************
 
 	ofstream myfile;
-	timespec ts;
-	myfile.open("10MB.txt");
-	for(int i=0; i<10000000; i++){
+
+	myfile.open("MB.txt");
+	int oneMB=1048576;
+	for(int i=0; i<oneMB*10; i++){
 		myfile<<"*";
 	}
 
@@ -47,10 +47,11 @@ int main() {
 //	cout<<"d "<<&ts;
 	cout << "\n!!!Hello World!!!" << endl; // prints !!!Hello World!!!
 	gettimeofday(&t2,NULL);
-	elapsedTime = (t2.tv_usec-t1.tv_usec);
+	//elapsedTime = (t2.tv_usec-t1.tv_usec);
 
 	elapsedTime = ((t2.tv_sec-t1.tv_sec)*1000.0)+((t2.tv_usec-t1.tv_usec)/1000.0);
 
-	cout<<elapsedTime<<" ms.";
+	//cout<<elapsedTime<<" ms.";
+	printf("%Lf ms.", elapsedTime);
 	//printf("%ld\n",(t2.tv_sec-t1.tv_sec));
 }
