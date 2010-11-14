@@ -21,13 +21,13 @@ ArchivoBinario::ArchivoBinario() {
 }
 
 ArchivoBinario::ArchivoBinario(char * nombreArchivo) {
-
+	this->nombreArchivo=nombreArchivo;
 }
 
-char * ArchivoBinario::getBuffer(char * nombreArchivo){
+char * ArchivoBinario::getBuffer(){
 	ifstream::pos_type size;
 	char * memblock;
-	ifstream infile (nombreArchivo,ios::in|ios::binary|ios::ate);
+	ifstream infile (this->nombreArchivo,ios::in|ios::binary|ios::ate);
 	if(infile.is_open()){
 		infile.seekg(0,ifstream::end);
 		size=infile.tellg();
@@ -36,7 +36,7 @@ char * ArchivoBinario::getBuffer(char * nombreArchivo){
 		infile.read(memblock,size);
 
 		infile.close();
-		cout<<"the complete file content is in memory "<<size;
+		//cout<<"the complete file content is in memory "<<size;
 	}
 	else{
 		cout<<"Unable to open file";

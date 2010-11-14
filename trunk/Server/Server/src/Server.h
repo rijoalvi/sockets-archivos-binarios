@@ -11,6 +11,8 @@
 class Server {
 public:
 	virtual ~Server();
+	int Lee_Socket (int fd, char *Datos, int Longitud);
+	int Escribe_Socket (int fd, char *Datos, int Longitud);
 	Server();
 };
 

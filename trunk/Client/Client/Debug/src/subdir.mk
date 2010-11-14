@@ -5,16 +5,19 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 CPP_SRCS += \
 ../src/ArchivoBinario.cpp \
+../src/Bitacora.cpp \
 ../src/Client.cpp \
 ../src/main.cpp 
 
 OBJS += \
 ./src/ArchivoBinario.o \
+./src/Bitacora.o \
 ./src/Client.o \
 ./src/main.o 
 
 CPP_DEPS += \
 ./src/ArchivoBinario.d \
+./src/Bitacora.d \
 ./src/Client.d \
 ./src/main.d 
 

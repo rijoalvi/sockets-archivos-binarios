@@ -10,7 +10,10 @@
 
 class Client {
 public:
+
 	Client(int argc, char *argv[]);
+	int Lee_Socket (int fd, char *Datos, int Longitud);
+	int Escribe_Socket (int fd, char *Datos, int Longitud);
 	virtual ~Client();
 };
 
