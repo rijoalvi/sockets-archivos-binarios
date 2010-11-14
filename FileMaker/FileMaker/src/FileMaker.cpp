@@ -31,15 +31,14 @@ int main() {
 	long double elapsedTime;
 	gettimeofday(&t1,NULL);
 
-
-
 //******************************************************************************************************
 
 	ofstream myfile;
 
-	myfile.open("MB.txt");
+	myfile.open("nuevo.txt");
 	int oneMB=1048576;
-	for(int i=0; i<oneMB*10; i++){
+	int oneKB=1024;
+	for(int i=0; i<oneMB*5; i++){
 		myfile<<"*";
 	}
 

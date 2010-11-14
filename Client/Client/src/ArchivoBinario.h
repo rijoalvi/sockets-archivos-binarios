@@ -10,9 +10,10 @@
 
 class ArchivoBinario {
 public:
+	char * nombreArchivo;
 	ArchivoBinario();
 	ArchivoBinario(char *);
-	char * getBuffer(char *);
+	char * getBuffer();
 	void crearArchivoAPartirDeBuffer(char * , char * ,int );
 	virtual ~ArchivoBinario();
 };

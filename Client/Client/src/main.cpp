@@ -22,6 +22,6 @@ int main(int argc, char *argv[]) {
 
 	Client* client=new Client(argc, argv);
 
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	cout << "!!!Terminado exitosamente!!!" << endl; // prints !!!Hello World!!!
 	return 0;
 }
